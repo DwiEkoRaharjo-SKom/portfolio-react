@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className="container mx-auto p-8 bg-gradient-to-br from-blue-200 via-blue-100 to-blue-50 text-gray-800">
       <section className="reveal reveal-shadow-bottom reveal-shadow-right reveal reveal-shadow-bottom reveal-shadow-right reveal bg-white shadow-lg rounded-lg p-8 mb-8">
-        <img src={process.env.PUBLIC_URL + '/Pas Foto Dwi 3X4.jpg'} alt="Dwi Eko Raharjo" className="w-32 h-32 rounded-full mb-6" />
+        <img src={import.meta.env.BASE_URL + '/Pas Foto Dwi 3X4.jpg'} alt="Dwi Eko Raharjo" className="w-32 h-32 rounded-full mb-6" />
         <h1 className="text-3xl text-blue-800 font-bold">Dwi Eko Raharjo</h1>
         <h3 className="text-xl text-blue-600">Frontend ReactJS Developer | Web Designer | Open Source Contributor</h3>
         <h3 className="text-lg text-blue-600">Remote Frontend ReactJS Developer (Entry - Middle Level)</h3>
