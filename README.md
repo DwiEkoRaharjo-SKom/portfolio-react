@@ -24,3 +24,10 @@ This project is a personal portfolio website built using **React** and **Tailwin
 1. Clone the repository:
    ```bash
    git clone https://github.com/DwiEkoRaharjo-SKom/portfolio-react.git
+
+
+License
+
+This project is open-source and available under the MIT License.
+
+Created and Developed by : Dwi Eko Raharjo
