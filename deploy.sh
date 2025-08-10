@@ -2,11 +2,14 @@
 
 # 1. Menambahkan homepage ke package.json
 echo "Menambahkan homepage ke package.json"
-sed -i 's/^{/"homepage": "https:\/\/DwiEkoRaharjo-SKom.github.io\/portfolio-react",/' package.json
+sed -i '1i\
+"homepage": "https://DwiEkoRaharjo-SKom.github.io/portfolio-react",' package.json
 
 # 2. Menambahkan script predeploy dan deploy di package.json
 echo "Menambahkan script predeploy dan deploy di package.json"
-jq '.scripts += {"predeploy": "npm run build", "deploy": "gh-pages -d build"}' package.json > tmp.json && mv tmp.json package.json
+sed -i '/"scripts": {/a \
+    "predeploy": "npm run build",\
+    "deploy": "gh-pages -d build",' package.json
 
 # 3. Menginstall gh-pages
 echo "Menginstall gh-pages"
